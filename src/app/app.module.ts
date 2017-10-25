@@ -3,23 +3,43 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { HttpModule } from '@angular/http';
+
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+import { ForgotpasswordPage } from '../pages/forgotpassword/forgotpassword';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { ContactPage } from '../pages/contact/contact';
+import { ServiciosPage } from '../pages/servicios/servicios';
+import { NursesPage } from '../pages/nurses/nurses';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    LoginPage,
+    SignupPage,
+    ForgotpasswordPage,
+    DashboardPage,
+    ContactPage,
+    ServiciosPage,
+    NursesPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    LoginPage,
+    SignupPage,
+    ForgotpasswordPage,
+    DashboardPage,
+    ContactPage,
+    ServiciosPage,
+    NursesPage
   ],
   providers: [
     StatusBar,

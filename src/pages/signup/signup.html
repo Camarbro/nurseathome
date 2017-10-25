@@ -1,0 +1,43 @@
+<ion-header >
+  <ion-navbar  hideBackButton="true">
+    <ion-buttons end>
+     <button ion-button icon-right color="light" (click)="dashboardPage()">SALTAR<ion-icon name="ios-arrow-forward"></ion-icon></button>
+   </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col><button ion-button block class="facebookButton"> Facebook</button></ion-col>
+        <ion-col><button ion-button block class="instagramButton"> Instagram</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="hrLine"><span>O</span></div>
+
+    <ion-list no-lines padding-top>
+      <ion-item>
+        <ion-input type="text" placeholder="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Apellido"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" placeholder="Correo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Contrasena"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Confirmar Contrasena"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block round color="secondary">Registrarse</button>
+    <div padding>
+      <button ion-button block color="light" clear (click)="loginPage();">Tiene una cuenta? INGRESAR</button>
+      <button ion-button block color="light" clear (click)="forgotPasswordPage();">Olvido su Contrasena</button>
+   </div>
+
+</ion-content>

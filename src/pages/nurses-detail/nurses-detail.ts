@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the NursesDetailPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NursesDetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NursesDetailPage');
+  presentConfirm() {
+    const alert = this.alertCtrl.create({
+      title: 'Confirmar compra',
+      message: 'Deseas comprar este servicio?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Comprar',
+          handler: () => {
+            console.log('Buy clicked');
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
 }

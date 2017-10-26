@@ -4,14 +4,15 @@ import { NursesDetailPage } from '../nurses-detail/nurses-detail';
 
 @IonicPage()
 @Component({
-  selector: 'page-nurses',
-  templateUrl: 'nurses.html',
+  selector: 'page-mis-servicios',
+  templateUrl: 'mis-servicios.html',
 })
-export class NursesPage {
+export class MisServiciosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   nursesDetailPage(){ this.navCtrl.push(NursesDetailPage); }
+
 
 }

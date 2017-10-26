@@ -13,6 +13,8 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { ContactPage } from '../pages/contact/contact';
 import { ServiciosPage } from '../pages/servicios/servicios';
 import { NursesPage } from '../pages/nurses/nurses';
+import { NursesDetailPage } from '../pages/nurses-detail/nurses-detail';
+import { MisServiciosPage } from '../pages/mis-servicios/mis-servicios';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NursesPage } from '../pages/nurses/nurses';
     DashboardPage,
     ContactPage,
     ServiciosPage,
-    NursesPage
+    NursesPage,
+    NursesDetailPage,
+    MisServiciosPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { NursesPage } from '../pages/nurses/nurses';
     DashboardPage,
     ContactPage,
     ServiciosPage,
-    NursesPage
+    NursesPage,
+    NursesDetailPage,
+    MisServiciosPage
   ],
   providers: [
     StatusBar,

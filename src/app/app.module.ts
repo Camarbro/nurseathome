@@ -15,6 +15,7 @@ import { ServiciosPage } from '../pages/servicios/servicios';
 import { NursesPage } from '../pages/nurses/nurses';
 import { NursesDetailPage } from '../pages/nurses-detail/nurses-detail';
 import { MisServiciosPage } from '../pages/mis-servicios/mis-servicios';
+import { AboutPage } from '../pages/about/about';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MisServiciosPage } from '../pages/mis-servicios/mis-servicios';
     ServiciosPage,
     NursesPage,
     NursesDetailPage,
-    MisServiciosPage
+    MisServiciosPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { MisServiciosPage } from '../pages/mis-servicios/mis-servicios';
     ServiciosPage,
     NursesPage,
     NursesDetailPage,
-    MisServiciosPage
+    MisServiciosPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

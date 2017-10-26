@@ -7,6 +7,7 @@ import { LoginPage } from '../pages/login/login';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { ContactPage } from '../pages/contact/contact';
 import { ServiciosPage } from '../pages/servicios/servicios';
+import { AboutPage } from '../pages/about/about';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,9 +28,9 @@ export class MyApp {
     this.pages = [
       { title: 'Inicio',icon:'home', component: DashboardPage },
       { title: 'Servicios',icon:'medkit', component: ServiciosPage },
-      //{ title: 'Nosotros', icon:'', component: AboutPage },
+      { title: 'Nosotros', icon:'contact', component: AboutPage },
       //{ title: 'Opinion', icon:'', component:},
-      { title: 'Contacto', icon:'contact', component: ContactPage },
+      { title: 'Contacto', icon:'contacts', component: ContactPage },
       { title: 'Cerrar Sesion',icon:'lock', component: LoginPage },
     ];
   }

@@ -7,6 +7,10 @@
 </ion-header>
 <ion-content padding>
 
+  <div class="img-container">
+    <img src="../assets/images/NAT.png">
+  </div>
+
     <ion-grid>
       <ion-row>
         <ion-col ><button ion-button block class="facebookButton">Ingresar con Facebook</button></ion-col>
@@ -26,9 +30,8 @@
         <ion-input type="password" placeholder="Contraseña"></ion-input>
       </ion-item>
     </ion-list>
-    <button ion-button block round color="secondary">Ingresar</button>
-
-    <div padding-top>
+      <button ion-button block round color="secondary">Ingresar</button>
+  <div padding-top>
     <button ion-button block color="light" clear (click)="signupPage();">No tienes cuenta? REGISTRAR</button>
     <button ion-button block color="light" clear (click)="forgotPasswordPage();">Olvido su Contraseña</button>
   </div>
